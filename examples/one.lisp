@@ -4,7 +4,8 @@
 ;;;; Example of X, Y scroll and zoom
 
 (defpackage :cl-gestures-example-one
-  (:use :cl :cl-gestures :sketch))
+  (:use :cl :cl-gestures :sketch)
+  (:export :run))
 
 (in-package :cl-gestures-example-one)
 
