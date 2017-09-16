@@ -40,7 +40,6 @@
 (defgeneric start (inst finger-data)
   (:documentation "Start gesture (must have enough fingers)")
   (:method ((inst t) finger-data)
-    (assert (= (n-fingers inst) (length finger-data)))
     (setf (slot-value inst 'started) t)
     (setf (slot-value inst 'finger-ids)
           (mapcar #'mtif:finger-id finger-data))
