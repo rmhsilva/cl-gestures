@@ -64,14 +64,14 @@ Have a look at [gestures_impl.lisp][impl]. The general idea is that gestures
 involve a number of fingers, and have three events associated with them: start,
 update, and stop. The gesture is 'started' as soon as the required number of
 fingers are present on the trackpad, gets 'updated' every time a new trackpad
-frame arrives, and is 'stopped' when 
+frame arrives, and is 'stopped' when the fingers are removed.
 
 Currently this means fingers can be used for multiple gestures. This is a good
-thing, as, for example, it means you can scroll horizotally and vertically at
+thing, as, for example, it means you can scroll horizontally and vertically at
 the same time. If you don't want that behaviour, handle the state at a higher
 level.
 
-[impl]: (https://github.com/rmhsilva/cl-gestures/blob/master/gestures-imp.lisp)
+[impl]: https://github.com/rmhsilva/cl-gestures/blob/master/gestures-imp.lisp
 
 
 ### Custom Gestures
