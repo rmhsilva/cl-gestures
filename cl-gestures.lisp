@@ -101,7 +101,7 @@
               (update gesture gesture-fingers)
               (stop gesture)))
         (when (ready-to-start gesture finger-data)
-          (start gesture finger-data)))))
+          (start gesture (subseq finger-data 0 (n-fingers gesture)))))))
 
 
 (defmacro with-gestures (instances &body body)
